@@ -28,6 +28,7 @@ switch = () => {
 
 render () {
     let component
+ 
     if (this.state.componentToRender ==='Login')
     component = <Login />
     else component = <Register />
