@@ -1,5 +1,5 @@
 import React from 'react'
-//import Store from '../redux/Store.js'
+
 import './recipies.css'
 import SingleRecipie from './SingleRecipies.js';
 

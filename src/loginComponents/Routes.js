@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './Home.js'
 import Menu from './Menu'
-import Favorites from './Favorites.js'
+import Favorites from '../recipies/Favorites.js'
 import Reciepes from '../recipies/Recipies.js';
 
 
