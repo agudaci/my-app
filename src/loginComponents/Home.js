@@ -2,7 +2,7 @@ import React from 'react'
 
 import Login from './Login.js'
 import Register from './Register.js'
-import Reciepes from './Recipies.js';
+
 
 class Home extends React.Component{
 constructor (props) {
@@ -41,7 +41,7 @@ render () {
   <button id="switch" onClick={this.switch}> {this.state.buttonText} 
     </button> 
 
-<Reciepes />
+
 
 </div>
    

@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Home.js'
 import Menu from './Menu'
 import Favorites from './Favorites.js'
+import Reciepes from '../recipies/Recipies.js';
 
 
 import { BrowserRouter as Router, Route, Switch }
@@ -15,10 +16,10 @@ const Routes = () => {
 
             <Switch>
 
-            <Route exact path='/' component={null} />
+            <Route exact path='/' component={Reciepes} />
+            <Route exact path='/fav' component={Favorites} />
             <Route exact path='/login' component={Home} />
             <Route exact path='/about' component={LoggedInAs} />
-            <Route exact path='/fav' component={Favorites} />
 
 
             <Route exact component={PathError} />
