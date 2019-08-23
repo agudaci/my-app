@@ -1,9 +1,12 @@
 import React from 'react'
 import Home from './Home.js'
 import Menu from './Menu'
+import Favorites from './Favorites.js'
+
 
 import { BrowserRouter as Router, Route, Switch }
  from "react-router-dom";
+import LoggedInAs from './LoggedInAs.js';
 
 const Routes = () => {
     return (
@@ -14,14 +17,16 @@ const Routes = () => {
 
             <Route exact path='/' component={null} />
             <Route exact path='/login' component={Home} />
+            <Route exact path='/about' component={LoggedInAs} />
+            <Route exact path='/fav' component={Favorites} />
+
+
             <Route exact component={PathError} />
 
             </Switch>
 
         </Router>
     )
-
-    
 }
 
 export default Routes

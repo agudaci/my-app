@@ -19,6 +19,9 @@ return <ul className='nav'>
     <li id = 'Login'>
         <Link to ='/login' className='nav-link'> Login </Link>  
     </li>
+    <li id = 'Login'>
+        <Link to ='/fav' className='nav-link'> Favorites </Link>  
+    </li>
 </ul>
 
 }
