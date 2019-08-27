@@ -2,10 +2,12 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 import {favoritesReducer} from './FavoritesReducer'
+import { recepiesReducer } from './RecepiesReducer'
 
 
 
 const rootReducer = combineReducers({
+    recepies: recepiesReducer,
     favorites: favoritesReducer
 })
 //create store by combining the reducers

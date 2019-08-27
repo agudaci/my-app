@@ -17,7 +17,7 @@ const Favorites = (props) => {
                 {emptyList}   
     </div>
 }
-
+    
 function mapStateToProps (state) {
     return {
         favorites: state.favorites
