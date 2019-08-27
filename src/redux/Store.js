@@ -8,7 +8,8 @@ import { recepiesReducer } from './RecepiesReducer'
 
 const rootReducer = combineReducers({
     recepies: recepiesReducer,
-    favorites: favoritesReducer
+    favorites: favoritesReducer,
+   
 })
 //create store by combining the reducers
 const Store = createStore(rootReducer, applyMiddleware(logger, thunk))

@@ -20,21 +20,26 @@ class Reciepes extends React.Component {
             description = {element.title} 
             key={element.id}/>
         })
+
+        if (this.props.isBusy) {
+            return <div>Loading ... </div>
+        } else {
+            return <div id = 'recepies' className = 'flex-container'>
         
-    return <div id = 'recepies' className = 'flex-container'>
+            {components}
+
+            </div>
+        }
         
-        {components}
     
-       
-    
-        </div>
     }
     
 }
 
 function mapStateToProps (state) {
     return {
-        recepies: state.recepies.recepies
+        recepies: state.recepies.recepies,
+        isBusy: state.recepies.isBusy
     }
 }
 export default connect(mapStateToProps)(Reciepes)
