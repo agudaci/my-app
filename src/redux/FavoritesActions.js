@@ -9,3 +9,13 @@ export function  addItemToFavorites (item) {
         })
     }
 }
+
+
+export function RemoveItemFromFavorites (id) {
+    return function (disaptch){
+        disaptch ({
+            type:'REMOVE_FROM_FAVORITES',
+            payload: id
+        })
+    }
+}

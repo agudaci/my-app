@@ -7,8 +7,11 @@ const Favorites = (props) => {
     let emptyList = ''
     const components = props.favorites.recepies.map((element) => {
         return <SingleRecipie 
+        action = 'remove'
         description = {element.description} 
-        key={element.key}/>})
+        id = {element.key}
+        key={element.key}
+        />})
       if (components.length < 1){
           emptyList = "You have no favorites recipies"
       }
