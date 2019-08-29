@@ -25,7 +25,7 @@ export default class SingleRecipie extends React.Component {
             Add To Favourites</button>
         } else {
             button = <button className = 'btn btn-success remove' onClick={this.RemoveFromFavorites}>
-            Remove From Favorites Favourites</button>
+            Remove From Favourites</button>
 
         }
         
